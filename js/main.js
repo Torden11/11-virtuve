@@ -1,6 +1,6 @@
 import { Kaitlente } from "./Kaitlente.js";
 
-const kaitlentciuKiekis = 4;
+const kaitlentciuKiekis = 5;
 
 // h1 -> Virtuve
 // h1 -> Dirbtuve (5)
@@ -39,8 +39,11 @@ if(document.querySelector('.karsta')); {
 //    titleDOM.style.backgroundColor='yellow';
 }
 
+//Eiluteje 44 yra parasyta  kaip padaryti nematoma <main> turini is index.html. T.y. mes padareme nematomu irasa "Cia bus kaitlentes", o pacios kaitlentes liko.
+
 document.querySelector('main').textContent = '';
 for (let i = 1; i <= kaitlentciuKiekis; i++) {
     const irenginys = new Kaitlente(i);
+    //Render siuo atveju reiskia piesti kaitlente nurodydamas jos dydi (i++)
      irenginys.render();
  }

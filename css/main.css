@@ -49,6 +49,7 @@ body {
 .kaitlente > .bottom {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 10px 20px;
 }
